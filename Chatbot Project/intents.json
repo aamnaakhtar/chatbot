@@ -1,0 +1,621 @@
+{
+    "intents": [
+
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },
+        {
+            "tag": "Haalchal",
+            "patterns": [
+                "How are you",
+                "hii how are you",
+                "hi how are you",
+                "How is everything?",
+                "How are you doing?",
+                "How are you feeling",
+                "How is life sailing",
+                "How was your day?",
+		"Whats up?",
+		"what's up?"
+            ],
+            "responses": [
+		"All good. Thank you.",
+                " Great, great, thanks.",
+                " I’m fine, thanks.",
+                " Fine, thanks. ",
+                " All right",
+                " I’m good, thanks."
+            ],
+	"context": [
+                ""
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+		"Hello",
+                "hii",
+                "hi",
+                "Hey",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?",
+		"Hello. Nice to see you here",
+                "hey. good to see you"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me", 
+		"That works. thank you."
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+		"That's my job",
+		"Glad to know that is helpful to you",
+		"Glad to assist you"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand",
+		"Sorry, I do not understand this",
+		"I am afraid, I can't get this"
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "covid",
+            "patterns": [
+                "What is covid",
+                "what is coronavirus disease",
+                "coronavirus",
+                "what is covid-19",
+                "what is covid19", 
+		"covid-19",
+		"covid19"
+            ],
+            "responses": [
+                "Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus,Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment,  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness, People also might get infected if they touch an infected droplet on a surface and then touch their own nose, mouth, or eyes, experts are looking at whether the virus can spread through stool (poop)."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "symptom",
+            "patterns": [
+                "covid symptoms",
+                "covid19 symptoms",
+                "covid-19 symptoms",
+                "covid signs",
+                "covid19 signs",
+                "covid-19 signs",
+		"coronavirus signs",
+		"signs and symptoms of coronavirus",
+		"symptoms of covid",
+		"symptoms of coronavirus",
+		"symptoms of covid19"
+            ],
+            "responses": [
+                "COVID-19 can cause a range of symptoms, including,fever,cough, trouble breathing, symptoms of a cold such as a sore throat, congestion, or a runny nose, chills muscle pain, headache,a loss of taste or smell, nausea or vomiting,diarrhea,tiredness, the virus can be more serious in some people, and some people have no symptoms at all."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "spread",
+            "patterns": [
+		"how covid19 is spread",
+                "how is covid spread",
+                "how covid can be spread",
+		"spread of coronavirus",
+		"spread of covid"
+            ],
+            "responses": [
+                "The virus spreads most easily when an infected person has symptoms, But it also can spread before symptoms start, It can take 2–14 days after someone is exposed to the virus for symptoms to show up, The closer you are to someone who is infected with coronavirus, and the longer you're together, the higher your risk of also getting infected."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "vulnerable",
+            "patterns": [
+		"who is more vulnerable to covid",
+                "who is more vulnerable to covid19",
+                "who is at more risk of getting covid",
+		"who is at more risk of getting covid19",
+		"who has at more danger of getting severe covid",
+		"who has at more danger of getting severe coronavirus disease"
+            ],
+            "responses": [
+                "Experts are still learning about COVID-19, There are far fewer cases of the virus reported in children, Usually, the virus causes a milder illness in kids, though some children have become pretty sick, Most of the people who have died from coronavirus were older adults or people with other health problems, such as heart disease, lung disease, or diabetes."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "mask",
+            "patterns": [
+		"wearing mask is compulsory for everyone during pandemic?",
+                "wearing mask is compulsory for everyone to avoid covid spread?",
+                "wearing mask is compulsory?",
+		"who should wear masks",
+		"everyone should wear mask?",
+		"i should wear mask even at home"
+            ],
+            "responses": [
+		"Wearing a mask is one of the most effective ways to prevent the spread of coronavirus, All adults and kids older than 2 years should wear a mask when out in public and around others, At home, anyone who is sick should wear a mask when around other household members to prevent spreading the virus, Children under 2 years old and people who have trouble breathing should not wear a mask, For more about masks, check the CDC's guide."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "vaccine",
+            "patterns": [
+		"how many vaccine dose are necessary",
+                "no. of vaccine dose required",
+                "no. of dose to get fully vaccinated",
+		"number of vaccine dose required",
+                "number of dose to get fully vaccinated"
+            ],
+            "responses": [
+		"To get fully vaccinated, an individual need two doses of any of the vaccines available in the nearest centre. But the two doses should be of same vaccine brand."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "parcel",
+            "patterns": [
+		"Can Someone Get Coronavirus (COVID-19) From Mail or a Package",
+                "could i get covid from parcels or courier",
+                "can covid be spread through mail or package"
+            ],
+            "responses": [
+		"The risk of getting infected from mail or a package is very low, But it's a good idea to wash your hands after handling mail."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+	"tag": "Can_adolescents_catch_COVID",
+         "patterns": [
+		"Can adolescents catch COVID?", 
+		"Can adolescents get COVID?",
+		"Are adolescents vulnerable to covid19?",
+		"Are adolescents at risk to getting covid?",
+		"Are teenagers vulnerable to covid19"
+	],
+         "responses": [
+		"Yes. All age groups can catch COVID-19. \nWhile we are still learning about how COVID-19 affects people, so far, data suggests that children under the age of 18 years have few deaths compared to other age groups and usually mild disease. However, cases of critical illness have been reported. As with adults, pre-existing medical problems like high blood pressure, heart and lung problems, asthma, diabetes, obesity, cancer and neurological and developmental conditions are risk factors for severe disease and intensive care admission in children."
+	],
+         "context": [""]
+        },
+	{"tag": "treatment",
+         "patterns": [
+		"Are there treatments for COVID?", 
+		"treatments COVID",
+		"Is there any treatment of covid",
+		"treatment of covid"
+	],
+         "responses": ["Scientists around the world are working to find and develop treatments for COVID-19. Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill. Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness."],
+         "context": [""]
+        },
+	{
+            "tag": "pet",
+            "patterns": [
+		"Can Pets Get Coronavirus disease",
+                "Can Pets Get COVID-19",
+                "my pet can get covid",
+		"are pets also at risk of covid"
+            ],
+            "responses": [
+		"Some animals have tested positive for coronavirus, People who are sick shouldn't have contact with their pets, If someone must care for a pet while sick, they should wash their hands before and after contact and wear a mask, If your pet is sick, call your vet for advice on what to do."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "updated",
+            "patterns": [
+		"Where Can I Get Updated Information on Coronavirus",
+                "Where Can I Get Updated Information on COVID-19",
+                "from where can i get covid related updates",
+		"updated covid data",
+		"from where can i get reliable covid related data",
+		"covid related information"
+            ],
+            "responses": [
+		"Check the CDC and World Health Organization (WHO) websites for up-to-date, reliable information about coronavirus."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{"tag": "probiotics",
+         "patterns": [
+		"Can probiotics help prevent COVID?",
+		"probiotics COVID",
+		"effect of probiotics on covid",
+		"are probiotics effective on covid"
+		],
+         "responses": ["No. Probiotics are live microorganisms that are generally added to foods or used as a supplement to the diet to confer a health benefit. However, there is currently no evidence to support the use of probiotics to help prevent or cure COVID-19."],
+         "context": [""]
+        },
+	 {"tag": "vaccinesafe",
+         "patterns": [
+		"Who should get the COVID vaccines?", 
+		"who should be vaccinated",
+		"is covid vaccine safe",
+		"is there any side effect of covid vaccine"
+		],
+         "responses": ["The COVID-19 vaccines are safe for most people 18 years and older, including those with pre-existing conditions of any kind, including auto-immune disorders. These conditions include: hypertension, diabetes, asthma, pulmonary, liver and kidney disease, as well as chronic infections that are stable and controlled. If supplies are limited in your area, discuss your situation with your care provider if you: Have a compromised immune system, Are pregnant or nursing your baby, Have a history of severe allergies, particularly to a vaccine (or any of the ingredients in the vaccine), Are severely frail"],
+         "context": [""]
+        },
+	 {"tag": "Antibiotics_on_COVID",
+         "patterns": ["Are antibiotics effective in preventing or treating COVID?", "effect of antibiotics on covid"],
+         "responses": ["Antibiotics do not work against viruses; they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. In hospitals, physicians will sometimes use antibiotics to prevent or treat secondary bacterial infections which can be a complication of COVID-19 in severely ill patients. They should only be used as directed by a physician to treat a bacterial infection."],
+         "context": [""]
+        }
+	{
+            "tag": "guidelines",
+            "patterns": [
+		"covid guidelines",
+                "guidelines issued by government for covid",
+                "coronavirus guidelines",
+                "guidelines issued by government for coronavirus disease"
+            ],
+            "responses": [
+		"IF YOU ARE FULLY VACCINATED \n Find new guidance for fully vaccinated people, If you are not vaccinated, find a vaccine. \n If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19, get the sick person RTPCR. \n Most people who get COVID-19 will be able to recover at home, /coronavirus/2019-ncov/if-you-are-sick/index,html for people who are recovering at home. \nStay home when you are sick, except to get medical care,https://www,cdc,gov/coronavirus/2019-ncov/hcp/guidance-prevent-spread,htmlCDC has directions \n If you have COVID-19, tell your close contacts so that they can quarantine at home and get tested. \n Use a separate room and bathroom for sick household members (if possible). \n The person who is sick should isolate, Learn when and how to isolate from WHO guidelines. \n Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. \n If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty. \n The person who is sick should wear a mask when they are around other people at home. They do not need to wear a mask if they are alone. \n Clean the sick room and bathroom, as needed, to avoid unnecessary contact with the sick person. \n However, some people may need emergency medical attention, Watch for symptoms and learn when to seek emergency medical attention."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered",
+		"What can you do for me?"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. I can chat with you. You can ask me for jokes or riddles! And most importantly, I can answer your covid related queries. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you",
+		"what is your name"
+            ],
+            "responses": [
+                "I am iBot, a Deep-Learning chatbot",
+		"My name is iBot. I am based on AI.",
+		"I am AI-based chatbot, named iBot",
+		"I am a chatbot. You can call me iBot",
+		"I am a chatbot, was named iBot."
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date","day","what day is is today"
+            ],
+            "responses": [
+                "You can have a look at your watch for time and for date, refer to some calender. Or else, to know date and time, you can also refer to your mobile phone."
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup",
+		"How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny",
+		"very funny",
+		"i cannot stop laughing"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+		"who developed you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was developed by Aamna Akhtar, Arshiya Dilshad and Athar Zahid Usmani.",
+		"Aamna Akhtar, Arshiya Dilshad and Athar Zahid Usmani developed me as their final year project."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                
+                "you are dumb",
+                "you don't answer my questions",
+		"i don't like you",
+		"you know nothing",
+		"you are stupid",
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well, that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!",
+		"Without a doubt, having fun talking to you"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "Amazing",
+                "Wonderful",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!",
+		"Hurray!",
+		"I am happy"
+            ]
+        },
+        
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it",
+		"today's temperature",
+		"what is the weather like today",
+		"how is the weather like today",
+		"what do you thing is the weather today",
+		"how about temperature today"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good",
+		"you are amazing",
+		"you are wonderful",
+		"you are superb"
+            ],
+            "responses": [
+                "Thank you!",
+		"I am flattered"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope",
+		"never",
+		"not at all",
+		"at no cost"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find my developers very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                "i'm fine",
+		"good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless",
+		"useless",
+		"suggest",
+		"suggestions",
+		"you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to aamnaakhtar7@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+            {"tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle",
+		"any riddle please"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?............Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?...................Incorrectly",
+                " How can a girl go 25 days without sleep?...........She sleeps at night!",
+                "How do you make the number one disappear?..............Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.........The letter 'w'",
+                "What can be caught but never thrown?...........A cold!",
+                "What has a thumb and four fingers but is not actually alive?.........Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.........Short",
+                "Why can't a bike stand on it's own?..........It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you",
+		"when were you made",
+		"what is your age",
+		"when were you developed"
+            ],
+            "responses": [
+                "I was developed in 2022, if that's what you are asking!"
+            ]
+        }
+    ]
+}
